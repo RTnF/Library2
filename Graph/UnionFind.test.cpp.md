@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: Graph/UnionFind.hpp
-    title: Graph/UnionFind.hpp
+    title: UnionFind
   - icon: ':heavy_check_mark:'
     path: Template/SmallTemplate.hpp
     title: Template/SmallTemplate.hpp
@@ -18,11 +18,10 @@ data:
     links:
     - https://judge.yosupo.jp/problem/unionfind
   bundledCode: "#line 1 \"Graph/UnionFind.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
-    \n#line 1 \"Graph/UnionFind.hpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\
     \n#line 2 \"Template/SmallTemplate.hpp\"\n#include <bits/stdc++.h>\nusing namespace\
     \ std;\nusing ll = long long;\nusing ull = unsigned long long;\nusing ld = long\
     \ double;\nconstexpr ll MOD = 1e9 + 7;\nconstexpr ll INF = 1e+18;\nconstexpr ld\
-    \ EPS = 1e-12L;\nconstexpr ld PI = 3.14159265358979323846L;\n#line 3 \"Graph/UnionFind.hpp\"\
+    \ EPS = 1e-12L;\nconstexpr ld PI = 3.14159265358979323846L;\n#line 2 \"Graph/UnionFind.hpp\"\
     \n\n// based on ACL\nstruct UnionFind {\n  int _n;\n  // \u6839\u306A\u3089-1\
     \ * \u6728\u306E\u9802\u70B9\u6570, \u6839\u3067\u306A\u3051\u308C\u3070\u89AA\
     \u306Eid\n  vector<int> ps;\n  int num_groups;\n  UnionFind() : _n(0) {\n  }\n\
@@ -64,7 +63,7 @@ data:
   isVerificationFile: true
   path: Graph/UnionFind.test.cpp
   requiredBy: []
-  timestamp: '2021-11-25 19:26:23+09:00'
+  timestamp: '2021-11-26 00:17:18+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Graph/UnionFind.test.cpp

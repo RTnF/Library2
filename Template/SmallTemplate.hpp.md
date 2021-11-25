@@ -4,7 +4,7 @@ data:
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
     path: Graph/UnionFind.hpp
-    title: Graph/UnionFind.hpp
+    title: UnionFind
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: Array/AssociativeArray.test.cpp

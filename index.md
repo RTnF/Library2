@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: Graph/UnionFind.hpp
-      title: Graph/UnionFind.hpp
+      title: UnionFind
   - name: Template
     pages:
     - icon: ':warning:'
