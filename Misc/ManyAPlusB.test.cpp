@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/many_aplusb"
-#include "Template/SmallTemplate.cpp"
+#include "Template/SmallTemplate.hpp"
 
 int main() {
   int q;
