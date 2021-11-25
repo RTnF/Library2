@@ -1,4 +1,3 @@
-#define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
 #include "Template/SmallTemplate.hpp"
 
 // based on ACL
