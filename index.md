@@ -4,8 +4,14 @@ data:
   - name: Array
     pages:
     - icon: ':heavy_check_mark:'
+      path: Array/BinaryIndexedTree.hpp
+      title: Array/BinaryIndexedTree.hpp
+    - icon: ':heavy_check_mark:'
       path: Array/CumulativeSum.hpp
       title: Array/CumulativeSum.hpp
+    - icon: ':warning:'
+      path: Array/InversionNumber.hpp
+      title: Array/InversionNumber.hpp
     - icon: ':heavy_check_mark:'
       path: Array/SparseTable.hpp
       title: Array/SparseTable.hpp
@@ -36,6 +42,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Array/AssociativeArray.test.cpp
       title: Array/AssociativeArray.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Array/PointAddRangeSum.test.cpp
+      title: Array/PointAddRangeSum.test.cpp
     - icon: ':heavy_check_mark:'
       path: Array/StaticRMQ.test.cpp
       title: Array/StaticRMQ.test.cpp
