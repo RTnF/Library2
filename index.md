@@ -1,6 +1,14 @@
 ---
 data:
   libraryCategories:
+  - name: Array
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Array/CumulativeSum.hpp
+      title: Array/CumulativeSum.hpp
+    - icon: ':heavy_check_mark:'
+      path: Array/SparseTable.hpp
+      title: Array/SparseTable.hpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
@@ -17,12 +25,23 @@ data:
     - icon: ':warning:'
       path: Template/Template.cpp
       title: Template/Template.cpp
+  - name: Utility
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Utility/BitOperation.hpp
+      title: Utility/BitOperation.hpp
   verificationCategories:
   - name: Array
     pages:
     - icon: ':heavy_check_mark:'
       path: Array/AssociativeArray.test.cpp
       title: Array/AssociativeArray.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Array/StaticRMQ.test.cpp
+      title: Array/StaticRMQ.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Array/StaticRangeSum.test.cpp
+      title: Array/StaticRangeSum.test.cpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'

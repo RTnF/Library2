@@ -3,12 +3,27 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: Array/CumulativeSum.hpp
+    title: Array/CumulativeSum.hpp
+  - icon: ':heavy_check_mark:'
+    path: Array/SparseTable.hpp
+    title: Array/SparseTable.hpp
+  - icon: ':heavy_check_mark:'
     path: Graph/UnionFind.hpp
     title: UnionFind
+  - icon: ':heavy_check_mark:'
+    path: Utility/BitOperation.hpp
+    title: Utility/BitOperation.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: Array/AssociativeArray.test.cpp
     title: Array/AssociativeArray.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Array/StaticRMQ.test.cpp
+    title: Array/StaticRMQ.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Array/StaticRangeSum.test.cpp
+    title: Array/StaticRangeSum.test.cpp
   - icon: ':heavy_check_mark:'
     path: Graph/UnionFind.test.cpp
     title: Graph/UnionFind.test.cpp
@@ -69,11 +84,16 @@ data:
   isVerificationFile: false
   path: Template/SmallTemplate.hpp
   requiredBy:
+  - Array/SparseTable.hpp
+  - Array/CumulativeSum.hpp
   - Graph/UnionFind.hpp
+  - Utility/BitOperation.hpp
   timestamp: '2021-11-25 19:26:23+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Array/StaticRMQ.test.cpp
   - Array/AssociativeArray.test.cpp
+  - Array/StaticRangeSum.test.cpp
   - Graph/UnionFind.test.cpp
   - Misc/ManyAPlusB.test.cpp
   - Misc/APlusB.test.cpp
