@@ -1,17 +1,22 @@
 #include "Template/SmallTemplate.hpp"
 
-// based on ACL
-struct UnionFind {
+/**
+ * UnionFind
+ * 辺の追加と連結判定をそれぞれ $O(\alpha (n))$ で行う。
+ */
+class UnionFind {
   int _n;
   // 根なら-1 * 木の頂点数, 根でなければ親のid
   vector<int> ps;
   int num_groups;
+
+public:
   UnionFind() : _n(0) {
   }
   // 要素数n, 変数0
   UnionFind(int n) : _n(n), ps(n, -1), num_groups(n) {
   }
-  // 辺a-bを追加する
+  // 辺a-bを追加する $O(\alpha (n))$
   int unite(int a, int b) {
     assert(0 <= a && a < _n);
     assert(0 <= b && b < _n);
@@ -27,12 +32,13 @@ struct UnionFind {
     num_groups--;
     return x;
   }
-  // 連結判定
+  // 連結判定 $O(\alpha (n))$
   bool same(int a, int b) {
     assert(0 <= a && a < _n);
     assert(0 <= b && b < _n);
     return root(a) == root(b);
   }
+  // 根のidを返す $O(\alpha (n))$
   int root(int a) {
     assert(0 <= a && a < _n);
     if(ps[a] < 0) {
@@ -40,7 +46,7 @@ struct UnionFind {
     }
     return ps[a] = root(ps[a]);
   }
-  // 連結成分のサイズ
+  // 連結成分のサイズ $O(\alpha (n))$
   int size(int a) {
     assert(0 <= a && a < _n);
     return -ps[root(a)];
@@ -49,7 +55,7 @@ struct UnionFind {
   int get_num() {
     return num_groups;
   }
-  // グループごとに整理 O(n lon n)
+  // グループごとに整理 $O(n \log n)$
   // 未テスト
   vector<vector<int>> groups() {
     vector<int> leader_buf(_n), group_size(_n, 0);
@@ -75,4 +81,3 @@ struct UnionFind {
     return result;
   }
 };
-
