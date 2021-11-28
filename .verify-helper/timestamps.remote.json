@@ -1,5 +1,6 @@
 {
 "Array/AssociativeArray.test.cpp": "2021-11-25 19:26:23 +0900",
+"Array/PointAddRangeSum.test.cpp": "2021-11-28 16:47:41 +0900",
 "Array/StaticRMQ.test.cpp": "2021-11-28 09:53:00 +0900",
 "Array/StaticRangeSum.test.cpp": "2021-11-28 09:53:00 +0900",
 "Graph/UnionFind.test.cpp": "2021-11-28 09:53:00 +0900",
