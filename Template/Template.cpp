@@ -34,11 +34,6 @@ using pqrev = priority_queue<T, vector<T>, greater<T>>;
 #define reprb(i, a, b) for(ll i = (b)-1, i##_end = (a); i >= i##_end; i--)
 #define ALL(a) begin(a), end(a)
 #define SZ(x) ((ll)(x).size())
-#ifdef OJ_LOCAL
-#  include "dump.hpp"
-#else
-#  define dump(...) ((void)0)
-#endif
 constexpr ll INF = 1e+18;
 constexpr ld EPS = 1e-12L;
 constexpr ld PI = 3.14159265358979323846L;

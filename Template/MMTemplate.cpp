@@ -49,11 +49,6 @@ template<typename T>
 T sum(const vector<T> &x) {
   return accumulate(ALL(x), T(0));
 }
-#ifndef ONLINE_JUDGE
-#  include "dump.hpp"
-#else
-#  define dump(...) ((void)0)
-#endif
 
 template<typename T>
 bool print_(const T &a) {
