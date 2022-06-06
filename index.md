@@ -1,11 +1,17 @@
 ---
 data:
-  libraryCategories: []
-  verificationCategories:
-  - name: .
+  libraryCategories:
+  - name: Template
     pages:
-    - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
+    - icon: ':warning:'
+      path: Template/MMTemplate.cpp
+      title: Template/MMTemplate.cpp
+    - icon: ':warning:'
+      path: Template/SmallTemplate.hpp
+      title: Template/SmallTemplate.hpp
+    - icon: ':warning:'
+      path: Template/Template.cpp
+      title: Template/Template.cpp
+  verificationCategories: []
 layout: toppage
 ---
