@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Example/APlusB.test.cpp
+    title: Example/APlusB.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "Template/SmallTemplate.hpp"
@@ -55,8 +58,9 @@ data:
   path: Template/SmallTemplate.hpp
   requiredBy: []
   timestamp: '2022-06-07 07:59:15+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Example/APlusB.test.cpp
 documentation_of: Template/SmallTemplate.hpp
 layout: document
 redirect_from:
