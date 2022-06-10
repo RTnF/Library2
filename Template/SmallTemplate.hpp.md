@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Example/APlusB.test.cpp
     title: Example/APlusB.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Example/ManyAPlusB.test.cpp
+    title: Example/ManyAPlusB.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -17,9 +20,9 @@ data:
 
     using namespace std;
 
-    using ll = long long;
+    using ll = int64_t;
 
-    using ull = unsigned long long;
+    using ull = uint64_t;
 
     using ld = long double;
 
@@ -38,9 +41,9 @@ data:
 
     using namespace std;
 
-    using ll = long long;
+    using ll = int64_t;
 
-    using ull = unsigned long long;
+    using ull = uint64_t;
 
     using ld = long double;
 
@@ -57,9 +60,10 @@ data:
   isVerificationFile: false
   path: Template/SmallTemplate.hpp
   requiredBy: []
-  timestamp: '2022-06-07 07:59:15+09:00'
+  timestamp: '2022-06-10 19:04:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Example/ManyAPlusB.test.cpp
   - Example/APlusB.test.cpp
 documentation_of: Template/SmallTemplate.hpp
 layout: document

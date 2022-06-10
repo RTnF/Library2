@@ -16,9 +16,9 @@ data:
     - https://judge.yosupo.jp/problem/aplusb
   bundledCode: "#line 1 \"Example/APlusB.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\
     \n#line 2 \"Template/SmallTemplate.hpp\"\n#include <bits/stdc++.h>\nusing namespace\
-    \ std;\nusing ll = long long;\nusing ull = unsigned long long;\nusing ld = long\
-    \ double;\nconstexpr ll MOD = 1e9 + 7;\nconstexpr ll INF = 1e+18;\nconstexpr ld\
-    \ EPS = 1e-12L;\nconstexpr ld PI = 3.14159265358979323846L;\n#line 3 \"Example/APlusB.test.cpp\"\
+    \ std;\nusing ll = int64_t;\nusing ull = uint64_t;\nusing ld = long double;\n\
+    constexpr ll MOD = 1e9 + 7;\nconstexpr ll INF = 1e+18;\nconstexpr ld EPS = 1e-12L;\n\
+    constexpr ld PI = 3.14159265358979323846L;\n#line 3 \"Example/APlusB.test.cpp\"\
     \n\nint main() {\n  int a, b;\n  cin >> a >> b;\n  cout << a + b << '\\n';\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\n#include \"Template/SmallTemplate.hpp\"\
     \n\nint main() {\n  int a, b;\n  cin >> a >> b;\n  cout << a + b << '\\n';\n}"
@@ -27,7 +27,7 @@ data:
   isVerificationFile: true
   path: Example/APlusB.test.cpp
   requiredBy: []
-  timestamp: '2022-06-09 23:54:59+09:00'
+  timestamp: '2022-06-10 19:04:49+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Example/APlusB.test.cpp

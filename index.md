@@ -18,5 +18,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: Example/APlusB.test.cpp
       title: Example/APlusB.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Example/ManyAPlusB.test.cpp
+      title: Example/ManyAPlusB.test.cpp
 layout: toppage
 ---
