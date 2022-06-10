@@ -1,8 +1,8 @@
 #pragma once
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using ull = unsigned long long;
+using ll = int64_t;
+using ull = uint64_t;
 using ld = long double;
 constexpr ll MOD = 1e9 + 7;
 constexpr ll INF = 1e+18;
