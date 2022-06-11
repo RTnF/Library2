@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Math/IsPrime.test.cpp
     title: Cpp/Math/IsPrime.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
@@ -43,7 +43,7 @@ data:
   path: Cpp/Math/Prime.hpp
   requiredBy: []
   timestamp: '2022-06-11 18:10:59+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/Math/IsPrime.test.cpp
 documentation_of: Cpp/Math/Prime.hpp
