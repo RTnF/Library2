@@ -1,5 +1,5 @@
 #define PROBLEM "https://yukicoder.me/problems/no/3030"
-#include "Math/Prime.hpp"
+#include "Math/IsPrime.hpp"
 
 int main() {
   cin.tie(0);
