@@ -11,7 +11,7 @@ data:
     - icon: ':warning:'
       path: Cpp/Template/MMTemplate.cpp
       title: Cpp/Template/MMTemplate.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Cpp/Template/SmallTemplate.hpp
       title: Cpp/Template/SmallTemplate.hpp
     - icon: ':warning:'
@@ -23,6 +23,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Cpp/Example/APlusB.test.cpp
       title: Cpp/Example/APlusB.test.cpp
+    - icon: ':x:'
+      path: Cpp/Example/BBQEasy.test.cpp
+      title: Cpp/Example/BBQEasy.test.cpp
     - icon: ':heavy_check_mark:'
       path: Cpp/Example/ManyAPlusB.test.cpp
       title: Cpp/Example/ManyAPlusB.test.cpp
