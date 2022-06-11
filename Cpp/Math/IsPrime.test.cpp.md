@@ -1,12 +1,22 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: Cpp/Math/Prime.hpp
+    title: Cpp/Math/Prime.hpp
+  - icon: ':question:'
+    path: Cpp/Template/SmallTemplate.hpp
+    title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: true
   _pathExtension: cpp
   _verificationStatusIcon: ':x:'
-  attributes: {}
+  attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://yukicoder.me/problems/no/3030
+    links:
+    - https://yukicoder.me/problems/no/3030
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
@@ -20,11 +30,13 @@ data:
     \n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n  int n;\n  cin\
     \ >> n;\n  while(n--) {\n    ull x;\n    cin >> x;\n    cout << x << ' ' << isPrime(x)\
     \ << '\\n';\n  }\n}"
-  dependsOn: []
+  dependsOn:
+  - Cpp/Math/Prime.hpp
+  - Cpp/Template/SmallTemplate.hpp
   isVerificationFile: true
   path: Cpp/Math/IsPrime.test.cpp
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
+  timestamp: '2022-06-11 18:10:59+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: Cpp/Math/IsPrime.test.cpp

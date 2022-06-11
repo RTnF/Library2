@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: Cpp/Math
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Cpp/Math/Prime.hpp
       title: Cpp/Math/Prime.hpp
   - name: Cpp/Template
@@ -11,7 +11,7 @@ data:
     - icon: ':warning:'
       path: Cpp/Template/MMTemplate.cpp
       title: Cpp/Template/MMTemplate.cpp
-    - icon: ':warning:'
+    - icon: ':question:'
       path: Cpp/Template/SmallTemplate.hpp
       title: Cpp/Template/SmallTemplate.hpp
     - icon: ':warning:'
@@ -20,10 +20,10 @@ data:
   verificationCategories:
   - name: Cpp/Example
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Cpp/Example/APlusB.test.cpp
       title: Cpp/Example/APlusB.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Cpp/Example/ManyAPlusB.test.cpp
       title: Cpp/Example/ManyAPlusB.test.cpp
   - name: Cpp/Math

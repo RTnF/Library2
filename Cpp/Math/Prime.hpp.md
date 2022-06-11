@@ -1,11 +1,17 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':question:'
+    path: Cpp/Template/SmallTemplate.hpp
+    title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: Cpp/Math/IsPrime.test.cpp
+    title: Cpp/Math/IsPrime.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
@@ -31,13 +37,15 @@ data:
     \ for(int i = 0; i < r - 1; ++i) {\n      x = powmod64(x, 2, n);\n      if(x ==\
     \ n - 1) {\n        composite = false;\n        break;\n      }\n    }\n    if(composite)\
     \ {\n      return false;\n    }\n  }\n  return true;\n}"
-  dependsOn: []
+  dependsOn:
+  - Cpp/Template/SmallTemplate.hpp
   isVerificationFile: false
   path: Cpp/Math/Prime.hpp
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2022-06-11 18:10:59+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - Cpp/Math/IsPrime.test.cpp
 documentation_of: Cpp/Math/Prime.hpp
 layout: document
 redirect_from:
