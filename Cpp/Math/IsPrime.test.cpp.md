@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Math/Prime.hpp
     title: Cpp/Math/Prime.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []

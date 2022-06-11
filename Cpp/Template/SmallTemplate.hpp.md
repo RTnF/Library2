@@ -9,7 +9,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Example/APlusB.test.cpp
     title: Cpp/Example/APlusB.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Example/BBQEasy.test.cpp
     title: Cpp/Example/BBQEasy.test.cpp
   - icon: ':heavy_check_mark:'
@@ -18,9 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Math/IsPrime.test.cpp
     title: Cpp/Math/IsPrime.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "Cpp/Template/SmallTemplate.hpp"
@@ -71,7 +71,7 @@ data:
   requiredBy:
   - Cpp/Math/Prime.hpp
   timestamp: '2022-06-11 18:10:59+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/Example/ManyAPlusB.test.cpp
   - Cpp/Example/BBQEasy.test.cpp
