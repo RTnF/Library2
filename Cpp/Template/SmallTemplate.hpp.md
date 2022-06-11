@@ -2,19 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith:
-  - icon: ':heavy_check_mark:'
-    path: Example/APlusB.test.cpp
-    title: Example/APlusB.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: Example/ManyAPlusB.test.cpp
-    title: Example/ManyAPlusB.test.cpp
+  _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: '#line 2 "Template/SmallTemplate.hpp"
+  bundledCode: '#line 2 "Cpp/Template/SmallTemplate.hpp"
 
     #include <bits/stdc++.h>
 
@@ -58,17 +52,15 @@ data:
     '
   dependsOn: []
   isVerificationFile: false
-  path: Template/SmallTemplate.hpp
+  path: Cpp/Template/SmallTemplate.hpp
   requiredBy: []
-  timestamp: '2022-06-10 19:04:49+09:00'
-  verificationStatus: LIBRARY_ALL_AC
-  verifiedWith:
-  - Example/ManyAPlusB.test.cpp
-  - Example/APlusB.test.cpp
-documentation_of: Template/SmallTemplate.hpp
+  timestamp: '2022-06-11 18:10:59+09:00'
+  verificationStatus: LIBRARY_NO_TESTS
+  verifiedWith: []
+documentation_of: Cpp/Template/SmallTemplate.hpp
 layout: document
 redirect_from:
-- /library/Template/SmallTemplate.hpp
-- /library/Template/SmallTemplate.hpp.html
-title: Template/SmallTemplate.hpp
+- /library/Cpp/Template/SmallTemplate.hpp
+- /library/Cpp/Template/SmallTemplate.hpp.html
+title: Cpp/Template/SmallTemplate.hpp
 ---

@@ -1,25 +1,35 @@
 ---
 data:
   libraryCategories:
-  - name: Template
+  - name: Cpp/Math
     pages:
     - icon: ':warning:'
-      path: Template/MMTemplate.cpp
-      title: Template/MMTemplate.cpp
-    - icon: ':heavy_check_mark:'
-      path: Template/SmallTemplate.hpp
-      title: Template/SmallTemplate.hpp
+      path: Cpp/Math/Prime.hpp
+      title: Cpp/Math/Prime.hpp
+  - name: Cpp/Template
+    pages:
     - icon: ':warning:'
-      path: Template/Template.cpp
-      title: Template/Template.cpp
+      path: Cpp/Template/MMTemplate.cpp
+      title: Cpp/Template/MMTemplate.cpp
+    - icon: ':warning:'
+      path: Cpp/Template/SmallTemplate.hpp
+      title: Cpp/Template/SmallTemplate.hpp
+    - icon: ':warning:'
+      path: Cpp/Template/Template.cpp
+      title: Cpp/Template/Template.cpp
   verificationCategories:
-  - name: Example
+  - name: Cpp/Example
     pages:
-    - icon: ':heavy_check_mark:'
-      path: Example/APlusB.test.cpp
-      title: Example/APlusB.test.cpp
-    - icon: ':heavy_check_mark:'
-      path: Example/ManyAPlusB.test.cpp
-      title: Example/ManyAPlusB.test.cpp
+    - icon: ':x:'
+      path: Cpp/Example/APlusB.test.cpp
+      title: Cpp/Example/APlusB.test.cpp
+    - icon: ':x:'
+      path: Cpp/Example/ManyAPlusB.test.cpp
+      title: Cpp/Example/ManyAPlusB.test.cpp
+  - name: Cpp/Math
+    pages:
+    - icon: ':x:'
+      path: Cpp/Math/IsPrime.test.cpp
+      title: Cpp/Math/IsPrime.test.cpp
 layout: toppage
 ---

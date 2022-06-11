@@ -1,0 +1,36 @@
+---
+data:
+  _extendedDependsOn: []
+  _extendedRequiredBy: []
+  _extendedVerifiedWith: []
+  _isVerificationFailed: true
+  _pathExtension: cpp
+  _verificationStatusIcon: ':x:'
+  attributes: {}
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/documentation/build.py\"\
+    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
+    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 401, in update\n    self.update(self._resolve(pathlib.Path(included), included_from=path))\n\
+    \  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Math/Prime.hpp:\
+    \ line -1: no such header\n"
+  code: "#define PROBLEM \"https://yukicoder.me/problems/no/3030\"\n#include \"Math/Prime.hpp\"\
+    \n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n  int n;\n  cin\
+    \ >> n;\n  while(n--) {\n    ull x;\n    cin >> x;\n    cout << x << ' ' << isPrime(x)\
+    \ << '\\n';\n  }\n}"
+  dependsOn: []
+  isVerificationFile: true
+  path: Cpp/Math/IsPrime.test.cpp
+  requiredBy: []
+  timestamp: '1970-01-01 00:00:00+00:00'
+  verificationStatus: TEST_WRONG_ANSWER
+  verifiedWith: []
+documentation_of: Cpp/Math/IsPrime.test.cpp
+layout: document
+redirect_from:
+- /verify/Cpp/Math/IsPrime.test.cpp
+- /verify/Cpp/Math/IsPrime.test.cpp.html
+title: Cpp/Math/IsPrime.test.cpp
+---

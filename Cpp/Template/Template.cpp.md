@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Template/Template.cpp\"\n#pragma region template\n#include\
+  bundledCode: "#line 1 \"Cpp/Template/Template.cpp\"\n#pragma region template\n#include\
     \ <bits/stdc++.h>\n//#include <boost/multiprecision/cpp_int.hpp>\n//#include <atcoder/all>\n\
     using namespace std;\n// using namespace atcoder;\n// using cpp_int = boost::multiprecision::cpp_int;\n\
     using ll = long long;\nusing ull = unsigned long long;\nusing ld = long double;\n\
@@ -112,15 +112,15 @@ data:
     \  cin >> _cases;\n  while (_cases--) solve();\n  //*/\n}"
   dependsOn: []
   isVerificationFile: false
-  path: Template/Template.cpp
+  path: Cpp/Template/Template.cpp
   requiredBy: []
-  timestamp: '2022-06-07 08:18:59+09:00'
+  timestamp: '2022-06-11 18:10:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Template/Template.cpp
+documentation_of: Cpp/Template/Template.cpp
 layout: document
 redirect_from:
-- /library/Template/Template.cpp
-- /library/Template/Template.cpp.html
-title: Template/Template.cpp
+- /library/Cpp/Template/Template.cpp
+- /library/Cpp/Template/Template.cpp.html
+title: Cpp/Template/Template.cpp
 ---
