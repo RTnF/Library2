@@ -1,16 +1,16 @@
 #include "Template/SmallTemplate.hpp"
-#include "Math/IsPrime.hpp"
+#include "NumberTheory/IsPrime.hpp"
 
 namespace in {
   vector<ull> factorize(ull n) {
-    auto f = [n](ull x) -> ull {
-      return ((__uint128_t)x * x + 1) % n;
+    auto f = [n](ull x, ull c) -> ull {
+      return ((__uint128_t)x * x + c) % n;
     };
-    auto rho = [f](ull m) -> ull {
+    auto rho = [f](ull m, ull c) -> ull {
       ull x = 2, y = 2, d = 1;
       while(d == 1) {
-        x = f(x);
-        y = f(f(y));
+        x = f(x, c);
+        y = f(f(y, c), c);
         d = gcd(x > y ? x - y : y - x, m);
       }
       return d == m ? 0 : d;
@@ -27,7 +27,10 @@ namespace in {
       factor.emplace_back(n);
       return factor;
     }
-    ull r = rho(n);
+    ull r = 0;
+    for(int i = 1; !r && i <= 3; ++i) {
+      r = rho(n, i);
+    }
     if(r) {
       auto f1 = factorize(r);
       auto f2 = factorize(n / r);

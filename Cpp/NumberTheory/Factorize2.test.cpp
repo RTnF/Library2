@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/factorize"
-#include "Math/Factorize.hpp"
+#include "NumberTheory/Factorize.hpp"
 
 int main() {
   cin.tie(0);
