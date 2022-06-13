@@ -4,14 +4,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphM.hpp
     title: Cpp/Graph/GraphM.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/WarshallFloyd.test.cpp
-    title: Cpp/Graph/WarshallFloyd.test.cpp
+    path: Cpp/Verify/WarshallFloyd.test.cpp
+    title: Cpp/Verify/WarshallFloyd.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -52,7 +52,7 @@ data:
   timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Cpp/Graph/WarshallFloyd.test.cpp
+  - Cpp/Verify/WarshallFloyd.test.cpp
 documentation_of: Cpp/Graph/WarshallFloyd.hpp
 layout: document
 redirect_from:

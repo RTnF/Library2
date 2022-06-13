@@ -4,14 +4,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/BellmanFord.test.cpp
-    title: Cpp/Graph/BellmanFord.test.cpp
+    path: Cpp/Verify/BellmanFord.test.cpp
+    title: Cpp/Verify/BellmanFord.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -52,7 +52,7 @@ data:
   timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Cpp/Graph/BellmanFord.test.cpp
+  - Cpp/Verify/BellmanFord.test.cpp
 documentation_of: Cpp/Graph/BellmanFord.hpp
 layout: document
 redirect_from:

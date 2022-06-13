@@ -25,38 +25,35 @@ data:
     title: Cpp/NumberTheory/IsPrime.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Cpp/Example/APlusB.test.cpp
-    title: Cpp/Example/APlusB.test.cpp
-  - icon: ':x:'
-    path: Cpp/Example/BBQEasy.test.cpp
-    title: Cpp/Example/BBQEasy.test.cpp
+    path: Cpp/Verify/APlusB.test.cpp
+    title: Cpp/Verify/APlusB.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Example/ManyAPlusB.test.cpp
-    title: Cpp/Example/ManyAPlusB.test.cpp
+    path: Cpp/Verify/BellmanFord.test.cpp
+    title: Cpp/Verify/BellmanFord.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/BellmanFord.test.cpp
-    title: Cpp/Graph/BellmanFord.test.cpp
+    path: Cpp/Verify/Dijkstra.test.cpp
+    title: Cpp/Verify/Dijkstra.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/Dijkstra.test.cpp
-    title: Cpp/Graph/Dijkstra.test.cpp
+    path: Cpp/Verify/Dijkstra2.test.cpp
+    title: Cpp/Verify/Dijkstra2.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/Dijkstra2.test.cpp
-    title: Cpp/Graph/Dijkstra2.test.cpp
+    path: Cpp/Verify/Factorize.test.cpp
+    title: Cpp/Verify/Factorize.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Graph/WarshallFloyd.test.cpp
-    title: Cpp/Graph/WarshallFloyd.test.cpp
+    path: Cpp/Verify/Factorize2.test.cpp
+    title: Cpp/Verify/Factorize2.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/Factorize.test.cpp
-    title: Cpp/NumberTheory/Factorize.test.cpp
+    path: Cpp/Verify/IsPrime.test.cpp
+    title: Cpp/Verify/IsPrime.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/Factorize2.test.cpp
-    title: Cpp/NumberTheory/Factorize2.test.cpp
+    path: Cpp/Verify/ManyAPlusB.test.cpp
+    title: Cpp/Verify/ManyAPlusB.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/IsPrime.test.cpp
-    title: Cpp/NumberTheory/IsPrime.test.cpp
-  _isVerificationFailed: true
+    path: Cpp/Verify/WarshallFloyd.test.cpp
+    title: Cpp/Verify/WarshallFloyd.test.cpp
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "Cpp/Template/SmallTemplate.hpp"
@@ -113,18 +110,17 @@ data:
   - Cpp/Graph/GraphM.hpp
   - Cpp/Graph/Dijkstra.hpp
   timestamp: '2022-06-11 18:10:59+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Cpp/Example/ManyAPlusB.test.cpp
-  - Cpp/Example/BBQEasy.test.cpp
-  - Cpp/Example/APlusB.test.cpp
-  - Cpp/NumberTheory/Factorize.test.cpp
-  - Cpp/NumberTheory/IsPrime.test.cpp
-  - Cpp/NumberTheory/Factorize2.test.cpp
-  - Cpp/Graph/Dijkstra2.test.cpp
-  - Cpp/Graph/WarshallFloyd.test.cpp
-  - Cpp/Graph/Dijkstra.test.cpp
-  - Cpp/Graph/BellmanFord.test.cpp
+  - Cpp/Verify/ManyAPlusB.test.cpp
+  - Cpp/Verify/Dijkstra2.test.cpp
+  - Cpp/Verify/WarshallFloyd.test.cpp
+  - Cpp/Verify/APlusB.test.cpp
+  - Cpp/Verify/Factorize.test.cpp
+  - Cpp/Verify/Dijkstra.test.cpp
+  - Cpp/Verify/IsPrime.test.cpp
+  - Cpp/Verify/BellmanFord.test.cpp
+  - Cpp/Verify/Factorize2.test.cpp
 documentation_of: Cpp/Template/SmallTemplate.hpp
 layout: document
 redirect_from:

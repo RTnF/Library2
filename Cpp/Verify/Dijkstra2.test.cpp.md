@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -17,9 +17,9 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_A
+    PROBLEM: https://judge.yosupo.jp/problem/shortest_path
     links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_A
+    - https://judge.yosupo.jp/problem/shortest_path
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n  File \"/opt/hostedtoolcache/Python/3.10.4/x64/lib/python3.10/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
@@ -29,27 +29,29 @@ data:
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
     )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Graph/Dijkstra.hpp:\
     \ line -1: no such header\n"
-  code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/5/GRL/1/GRL_1_A\"\
-    \n#include \"Graph/Dijkstra.hpp\"\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
-    \  int V, E, r;\n  cin >> V >> E >> r;\n  GraphL<int> graph(V);\n  for(int i =\
-    \ 0; i < E; ++i) {\n    int s, t, d;\n    cin >> s >> t >> d;\n    graph.add_edge(s,\
-    \ t, d);\n  }\n  graph.dijkstra(r);\n  for(int i = 0; i < V; ++i) {\n    int dist\
-    \ = graph.getDist(r, i);\n    if(dist >= 2000000000) {\n      cout << \"INF\\\
-    n\";\n    } else {\n      cout << dist << '\\n';\n    }\n  }\n}"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n#include\
+    \ \"Graph/Dijkstra.hpp\"\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
+    \  int V, E, start, goal;\n  cin >> V >> E >> start >> goal;\n  GraphL graph(V);\n\
+    \  for(int i = 0; i < E; ++i) {\n    int s, t, d;\n    cin >> s >> t >> d;\n \
+    \   graph.add_edge(s, t, d);\n  }\n  graph.dijkstra(start);\n  ll dist = graph.getDist(start,\
+    \ goal);\n  if(dist == GraphL<>::UNREACHABLE) {\n    cout << \"-1\\n\";\n  } else\
+    \ {\n    auto ans = graph.getShortestPath(start, goal);\n    int n = (int)ans.size()\
+    \ - 1;\n    cout << dist << ' ' << n << '\\n';\n    for(int i = 0; i < n; ++i)\
+    \ {\n      cout << ans[i] << ' ' << ans[i + 1] << '\\n';\n    }\n  }\n}"
   dependsOn:
   - Cpp/Graph/Dijkstra.hpp
   - Cpp/Template/SmallTemplate.hpp
   - Cpp/Graph/GraphL.hpp
   isVerificationFile: true
-  path: Cpp/Graph/Dijkstra.test.cpp
+  path: Cpp/Verify/Dijkstra2.test.cpp
   requiredBy: []
-  timestamp: '2022-06-13 23:19:48+09:00'
+  timestamp: '2022-06-13 23:34:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Cpp/Graph/Dijkstra.test.cpp
+documentation_of: Cpp/Verify/Dijkstra2.test.cpp
 layout: document
 redirect_from:
-- /verify/Cpp/Graph/Dijkstra.test.cpp
-- /verify/Cpp/Graph/Dijkstra.test.cpp.html
-title: Cpp/Graph/Dijkstra.test.cpp
+- /verify/Cpp/Verify/Dijkstra2.test.cpp
+- /verify/Cpp/Verify/Dijkstra2.test.cpp.html
+title: Cpp/Verify/Dijkstra2.test.cpp
 ---

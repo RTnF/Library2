@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -29,15 +29,15 @@ data:
   dependsOn:
   - Cpp/Template/SmallTemplate.hpp
   isVerificationFile: true
-  path: Cpp/Example/APlusB.test.cpp
+  path: Cpp/Verify/APlusB.test.cpp
   requiredBy: []
-  timestamp: '2022-06-11 18:10:59+09:00'
+  timestamp: '2022-06-13 23:34:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Cpp/Example/APlusB.test.cpp
+documentation_of: Cpp/Verify/APlusB.test.cpp
 layout: document
 redirect_from:
-- /verify/Cpp/Example/APlusB.test.cpp
-- /verify/Cpp/Example/APlusB.test.cpp.html
-title: Cpp/Example/APlusB.test.cpp
+- /verify/Cpp/Verify/APlusB.test.cpp
+- /verify/Cpp/Verify/APlusB.test.cpp.html
+title: Cpp/Verify/APlusB.test.cpp
 ---

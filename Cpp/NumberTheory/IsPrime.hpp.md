@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy:
@@ -10,14 +10,14 @@ data:
     title: Cpp/NumberTheory/Factorize.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/Factorize.test.cpp
-    title: Cpp/NumberTheory/Factorize.test.cpp
+    path: Cpp/Verify/Factorize.test.cpp
+    title: Cpp/Verify/Factorize.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/Factorize2.test.cpp
-    title: Cpp/NumberTheory/Factorize2.test.cpp
+    path: Cpp/Verify/Factorize2.test.cpp
+    title: Cpp/Verify/Factorize2.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/NumberTheory/IsPrime.test.cpp
-    title: Cpp/NumberTheory/IsPrime.test.cpp
+    path: Cpp/Verify/IsPrime.test.cpp
+    title: Cpp/Verify/IsPrime.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -55,9 +55,9 @@ data:
   timestamp: '2022-06-13 19:17:04+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Cpp/NumberTheory/Factorize.test.cpp
-  - Cpp/NumberTheory/IsPrime.test.cpp
-  - Cpp/NumberTheory/Factorize2.test.cpp
+  - Cpp/Verify/Factorize.test.cpp
+  - Cpp/Verify/IsPrime.test.cpp
+  - Cpp/Verify/Factorize2.test.cpp
 documentation_of: Cpp/NumberTheory/IsPrime.hpp
 layout: document
 redirect_from:
