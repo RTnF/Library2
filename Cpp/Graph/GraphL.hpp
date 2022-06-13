@@ -9,7 +9,7 @@ class Edge {
 public:
   const int from, to, id;
   const T cost;
-  Edge(int from_, int to_, T cost_): from(from_), to(to_), cost(cost_), id(nextId++) {}
+  Edge(int from_, int to_, T cost_): from(from_), to(to_), id(nextId++), cost(cost_) {}
 };
 
 template<class T>
@@ -30,6 +30,8 @@ class GraphL {
   unordered_map<int, vector<int>> shortest_path_parent;
 
 public:
+  static const Cost UNREACHABLE = numeric_limits<Cost>::max();
+  static const Cost NEGATIVE_CYCLE = numeric_limits<Cost>::min();
   GraphL() {}
   GraphL(int n_): n(n_), m(0), adj(n_) {}
 
@@ -44,11 +46,10 @@ public:
   }
   vector<E> &operator[](int i) { return adj[i]; }
 
-  void dijkstra(int start_node);
-
   // 最短距離
+  void dijkstra(int start_node);
+  void bellmanFord(int start_node);
   Cost getDist(int from, int to) { return shortest_path_dist[from][to]; }
-  // 最短パス
   vector<int> getShortestPath(int from, int to) {
     vector<int> path;
     for(int cur = to; cur != -1; cur = shortest_path_parent[from][cur]) { path.emplace_back(cur); }

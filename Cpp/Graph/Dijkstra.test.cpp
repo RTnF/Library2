@@ -7,17 +7,17 @@ int main() {
   int V, E, r;
   cin >> V >> E >> r;
   GraphL<int> graph(V);
-  for(int i = 0; i < E; ++i){
+  for(int i = 0; i < E; ++i) {
     int s, t, d;
     cin >> s >> t >> d;
     graph.add_edge(s, t, d);
   }
   graph.dijkstra(r);
-  for(int i = 0; i < V; ++i){
+  for(int i = 0; i < V; ++i) {
     int dist = graph.getDist(r, i);
-    if(dist >= 2000000000){
+    if(dist >= 2000000000) {
       cout << "INF\n";
-    }else{
+    } else {
       cout << dist << '\n';
     }
   }
