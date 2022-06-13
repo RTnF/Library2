@@ -11,9 +11,7 @@ int main() {
     cin >> n;
     auto f = factorize(n);
     cout << f.size();
-    for(auto p: f) {
-      cout << ' ' << p;
-    }
+    for(auto p: f) { cout << ' ' << p; }
     cout << '\n';
   }
 }

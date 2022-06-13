@@ -103,41 +103,42 @@ auto makev(size_t sz, Args... args) {
   return vector<decltype(makev(args...))>(sz, makev(args...));
 }
 
-template<typename T>
-bool print_(const T &a) {
-  cout << a;
-  return true;
-}
-template<typename T>
-bool print_(const vector<T> &vec) {
-  for(auto &a: vec) {
+namespace in {
+  template<typename T>
+  bool print(const T &a) {
     cout << a;
-    if(&a != &vec.back())
-      cout << ' ';
+    return true;
   }
-  return false;
-}
-template<typename T>
-bool print_(const vector<vector<T>> &vv) {
-  for(auto &v: vv) {
-    for(auto &a: v) {
+  template<typename T>
+  bool print(const vector<T> &vec) {
+    for(auto &a: vec) {
       cout << a;
-      if(&a != &v.back())
+      if(&a != &vec.back())
         cout << ' ';
     }
-    if(&v != &vv.back())
-      cout << '\n';
+    return false;
   }
-  return false;
-}
-void print() {
-  cout << '\n';
-}
+  template<typename T>
+  bool print(const vector<vector<T>> &vv) {
+    for(auto &v: vv) {
+      for(auto &a: v) {
+        cout << a;
+        if(&a != &v.back())
+          cout << ' ';
+      }
+      if(&v != &vv.back())
+        cout << '\n';
+    }
+    return false;
+  }
+}; // namespace in
+void print() { cout << '\n'; }
 template<typename Head, typename... Tail>
 void print(Head &&head, Tail &&...tail) {
-  bool f = print_(head);
-  if(sizeof...(tail) != 0)
+  bool f = in::print(head);
+  if(sizeof...(tail) != 0) {
     cout << (f ? ' ' : '\n');
+  }
   print(forward<Tail>(tail)...);
 }
 #pragma endregion
@@ -160,8 +161,7 @@ constexpr ll MOD = 998244353;
   } while(0)
 //#define PRECISION
 
-void solve() {
-}
+void solve() {}
 
 int main() {
   cin.tie(0);

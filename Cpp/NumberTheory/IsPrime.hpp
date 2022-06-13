@@ -1,3 +1,4 @@
+#pragma once
 #include "Template/SmallTemplate.hpp"
 
 // Miller test for 64bit

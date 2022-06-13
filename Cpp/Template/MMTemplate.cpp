@@ -49,42 +49,42 @@ template<typename T>
 T sum(const vector<T> &x) {
   return accumulate(ALL(x), T(0));
 }
-
-template<typename T>
-bool print_(const T &a) {
-  cout << a;
-  return true;
-}
-template<typename T>
-bool print_(const vector<T> &vec) {
-  for(auto &a: vec) {
+namespace in {
+  template<typename T>
+  bool print(const T &a) {
     cout << a;
-    if(&a != &vec.back())
-      cout << ' ';
+    return true;
   }
-  return false;
-}
-template<typename T>
-bool print_(const vector<vector<T>> &vv) {
-  for(auto &v: vv) {
-    for(auto &a: v) {
+  template<typename T>
+  bool print(const vector<T> &vec) {
+    for(auto &a: vec) {
       cout << a;
-      if(&a != &v.back())
+      if(&a != &vec.back())
         cout << ' ';
     }
-    if(&v != &vv.back())
-      cout << '\n';
+    return false;
   }
-  return false;
-}
-void print() {
-  cout << '\n';
-}
+  template<typename T>
+  bool print(const vector<vector<T>> &vv) {
+    for(auto &v: vv) {
+      for(auto &a: v) {
+        cout << a;
+        if(&a != &v.back())
+          cout << ' ';
+      }
+      if(&v != &vv.back())
+        cout << '\n';
+    }
+    return false;
+  }
+}; // namespace in
+void print() { cout << '\n'; }
 template<typename Head, typename... Tail>
 void print(Head &&head, Tail &&...tail) {
-  bool f = print_(head);
-  if(sizeof...(tail) != 0)
+  bool f = in::print(head);
+  if(sizeof...(tail) != 0) {
     cout << (f ? ' ' : '\n');
+  }
   print(forward<Tail>(tail)...);
 }
 
@@ -92,91 +92,53 @@ struct Timer {
   chrono::high_resolution_clock::time_point start, now;
   chrono::nanoseconds nano;
   int threshold = 1930000000; // 1.93 s
-  Timer() {
-    reset();
-  }
-  void reset() {
-    start = chrono::high_resolution_clock::now();
-  }
+  Timer() { reset(); }
+  void reset() { start = chrono::high_resolution_clock::now(); }
   int get_ns() {
     now = chrono::high_resolution_clock::now();
     nano = chrono::duration_cast<chrono::nanoseconds>(now - start);
     return nano.count();
   }
-  int get_us() {
-    return get_ns() / 1000;
-  }
-  int get_ms() {
-    return get_ns() / 1000000;
-  }
-  int get_s() {
-    return get_ns() / 1000000000;
-  }
-  int get_ns_remain() {
-    return threshold - get_ns();
-  }
-  int get_us_remain() {
-    return get_ns_remain() / 1000;
-  }
-  int get_ms_remain() {
-    return get_ns_remain() / 1000000;
-  }
-  int get_s_remain() {
-    return get_ns_remain() / 1000000000;
-  }
-  int get_limit_ms() {
-    return threshold / 1000000;
-  }
-  bool intime() {
-    return get_ns() <= threshold;
-  }
+  int get_us() { return get_ns() / 1000; }
+  int get_ms() { return get_ns() / 1000000; }
+  int get_s() { return get_ns() / 1000000000; }
+  int getRemain_ns() { return threshold - get_ns(); }
+  int getRemain_us() { return getRemain_ns() / 1000; }
+  int getRemain_ms() { return getRemain_ns() / 1000000; }
+  int getRemain_s() { return getRemain_ns() / 1000000000; }
+  int getLimit_ms() { return threshold / 1000000; }
+  bool intime() { return get_ns() <= threshold; }
 } timer;
 
-// https://en.wikipedia.org/wiki/Xorshift
-struct XorShift128Plus {
-  uint64_t s0, s1;
-  // seed != 0
-  XorShift128Plus(uint64_t s0_, uint64_t s1_): s0(s0_), s1(s1_) {
-  }
+// https://ja.wikipedia.org/wiki/Xorshift
+class XorShift64 {
+  uint64_t s;
+
+public:
+  XorShift64(uint64_t s_): s(s_) {}
   // [0, 2**64)
   uint64_t get() {
-    uint64_t x = s0;
-    const uint64_t y = s1;
-    s0 = y;
-    x ^= x << 23;
-    s1 = x ^ y ^ (x >> 17) ^ (y >> 26);
-    return s1 + y;
-  }
-  // [min, max]
-  int getint(int mi, int ma) {
-    return mi + get() % (ma - mi + 1);
-  }
-  // [min, max]
-  ll getll(ll mi, ll ma) {
-    return mi + get() % (ma - mi + 1);
-  }
-  // [0, 1)
-  double getdouble() {
-    return get() / pow(2.0, 64);
+    uint64_t x = s;
+    x ^= x << 7;
+    return s = x ^ (x >> 9);
   }
   // [min, max)
-  double getdouble(double mi, double ma) {
-    return mi + getdouble() * (ma - mi);
-  }
+  int getInt(int mi, int ma) { return mi + get() % (ma - mi); }
+  // [min, max)
+  ll getLL(ll mi, ll ma) { return mi + get() % (ma - mi); }
+  // [0, 1)
+  double getDouble() { return get() / pow(2.0, 64); }
+  // [min, max)
+  double getDouble(double mi, double ma) { return mi + getDouble() * (ma - mi); }
   // normal
-  double getnormal() {
-    double x = getdouble(), y = getdouble();
+  double getNormal() {
+    double x = getDouble(), y = getDouble();
     return sqrt(-2.0 * log(x)) * cos(2.0 * M_PI * y);
   }
-};
-
-XorShift128Plus rnd(697268320233765593, 527745645107487933);
+} rnd(720759665484242684ull);
 
 #pragma endregion
 
-void solve() {
-}
+void solve() {}
 
-int main() {
-  solve();
-}
+int main() { solve(); }

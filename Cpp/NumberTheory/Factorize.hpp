@@ -1,11 +1,10 @@
+#pragma once
 #include "Template/SmallTemplate.hpp"
 #include "NumberTheory/IsPrime.hpp"
 
 namespace in {
   vector<ull> factorize(ull n) {
-    auto f = [n](ull x, ull c) -> ull {
-      return ((__uint128_t)x * x + c) % n;
-    };
+    auto f = [n](ull x, ull c) -> ull { return ((__uint128_t)x * x + c) % n; };
     auto rho = [f](ull m, ull c) -> ull {
       ull x = 2, y = 2, d = 1;
       while(d == 1) {
@@ -28,17 +27,10 @@ namespace in {
       return factor;
     }
     ull r = 0;
-    for(int i = 1; !r && i <= 3; ++i) {
-      r = rho(n, i);
-    }
+    for(int i = 1; !r && i <= 3; ++i) { r = rho(n, i); }
     if(r) {
       auto f1 = factorize(r);
       auto f2 = factorize(n / r);
-      /*
-      cerr << "============" << endl;
-      cerr << r << " " << n/r << endl;
-      cerr << f1.size() << " " << f2.size() << endl;
-      */
       factor.insert(factor.end(), f1.begin(), f1.end());
       factor.insert(factor.end(), f2.begin(), f2.end());
       return factor;
