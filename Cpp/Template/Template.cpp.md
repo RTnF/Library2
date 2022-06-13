@@ -41,22 +41,23 @@ data:
     \ T(0));\n}\n// last param -> T\ntemplate<typename T>\nvector<T> makev(size_t\
     \ a, T b) {\n  return vector<T>(a, b);\n}\ntemplate<typename... Args>\nauto makev(size_t\
     \ sz, Args... args) {\n  return vector<decltype(makev(args...))>(sz, makev(args...));\n\
-    }\n\ntemplate<typename T>\nbool print_(const T &a) {\n  cout << a;\n  return true;\n\
-    }\ntemplate<typename T>\nbool print_(const vector<T> &vec) {\n  for(auto &a: vec)\
-    \ {\n    cout << a;\n    if(&a != &vec.back())\n      cout << ' ';\n  }\n  return\
-    \ false;\n}\ntemplate<typename T>\nbool print_(const vector<vector<T>> &vv) {\n\
-    \  for(auto &v: vv) {\n    for(auto &a: v) {\n      cout << a;\n      if(&a !=\
-    \ &v.back())\n        cout << ' ';\n    }\n    if(&v != &vv.back())\n      cout\
-    \ << '\\n';\n  }\n  return false;\n}\nvoid print() {\n  cout << '\\n';\n}\ntemplate<typename\
-    \ Head, typename... Tail>\nvoid print(Head &&head, Tail &&...tail) {\n  bool f\
-    \ = print_(head);\n  if(sizeof...(tail) != 0)\n    cout << (f ? ' ' : '\\n');\n\
-    \  print(forward<Tail>(tail)...);\n}\n#pragma endregion\n\n//*\nconstexpr ll MOD\
-    \ = 1e9 + 7;\n/*/\nconstexpr ll MOD = 998244353;\n//*/\n\n#define PRF(f)     \
-    \                       \\\n  do {                                    \\\n   \
-    \ cout << ((f) ? \"Yes\" : \"No\") << '\\n'; \\\n    return;                 \
-    \              \\\n  } while(0)\n#define PR()        \\\n  do {              \\\
-    \n    cout << \"-1\\n\"; \\\n    return;         \\\n  } while(0)\n//#define PRECISION\n\
-    \nvoid solve() {\n}\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
+    }\n\nnamespace in {\n  template<typename T>\n  bool print(const T &a) {\n    cout\
+    \ << a;\n    return true;\n  }\n  template<typename T>\n  bool print(const vector<T>\
+    \ &vec) {\n    for(auto &a: vec) {\n      cout << a;\n      if(&a != &vec.back())\n\
+    \        cout << ' ';\n    }\n    return false;\n  }\n  template<typename T>\n\
+    \  bool print(const vector<vector<T>> &vv) {\n    for(auto &v: vv) {\n      for(auto\
+    \ &a: v) {\n        cout << a;\n        if(&a != &v.back())\n          cout <<\
+    \ ' ';\n      }\n      if(&v != &vv.back())\n        cout << '\\n';\n    }\n \
+    \   return false;\n  }\n}; // namespace in\nvoid print() { cout << '\\n'; }\n\
+    template<typename Head, typename... Tail>\nvoid print(Head &&head, Tail &&...tail)\
+    \ {\n  bool f = in::print(head);\n  if(sizeof...(tail) != 0) {\n    cout << (f\
+    \ ? ' ' : '\\n');\n  }\n  print(forward<Tail>(tail)...);\n}\n#pragma endregion\n\
+    \n//*\nconstexpr ll MOD = 1e9 + 7;\n/*/\nconstexpr ll MOD = 998244353;\n//*/\n\
+    \n#define PRF(f)                            \\\n  do {                       \
+    \             \\\n    cout << ((f) ? \"Yes\" : \"No\") << '\\n'; \\\n    return;\
+    \                               \\\n  } while(0)\n#define PR()        \\\n  do\
+    \ {              \\\n    cout << \"-1\\n\"; \\\n    return;         \\\n  } while(0)\n\
+    //#define PRECISION\n\nvoid solve() {}\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
     \  cout << fixed << setprecision(20);\n  //*\n  solve();\n  /*/\n  ll _cases;\n\
     \  cin >> _cases;\n  while (_cases--) solve();\n  //*/\n}\n"
   code: "#pragma region template\n#include <bits/stdc++.h>\n//#include <boost/multiprecision/cpp_int.hpp>\n\
@@ -91,30 +92,31 @@ data:
     \ vector<T> &x) {\n  return accumulate(ALL(x), T(0));\n}\n// last param -> T\n\
     template<typename T>\nvector<T> makev(size_t a, T b) {\n  return vector<T>(a,\
     \ b);\n}\ntemplate<typename... Args>\nauto makev(size_t sz, Args... args) {\n\
-    \  return vector<decltype(makev(args...))>(sz, makev(args...));\n}\n\ntemplate<typename\
-    \ T>\nbool print_(const T &a) {\n  cout << a;\n  return true;\n}\ntemplate<typename\
-    \ T>\nbool print_(const vector<T> &vec) {\n  for(auto &a: vec) {\n    cout <<\
-    \ a;\n    if(&a != &vec.back())\n      cout << ' ';\n  }\n  return false;\n}\n\
-    template<typename T>\nbool print_(const vector<vector<T>> &vv) {\n  for(auto &v:\
-    \ vv) {\n    for(auto &a: v) {\n      cout << a;\n      if(&a != &v.back())\n\
-    \        cout << ' ';\n    }\n    if(&v != &vv.back())\n      cout << '\\n';\n\
-    \  }\n  return false;\n}\nvoid print() {\n  cout << '\\n';\n}\ntemplate<typename\
-    \ Head, typename... Tail>\nvoid print(Head &&head, Tail &&...tail) {\n  bool f\
-    \ = print_(head);\n  if(sizeof...(tail) != 0)\n    cout << (f ? ' ' : '\\n');\n\
-    \  print(forward<Tail>(tail)...);\n}\n#pragma endregion\n\n//*\nconstexpr ll MOD\
-    \ = 1e9 + 7;\n/*/\nconstexpr ll MOD = 998244353;\n//*/\n\n#define PRF(f)     \
-    \                       \\\n  do {                                    \\\n   \
-    \ cout << ((f) ? \"Yes\" : \"No\") << '\\n'; \\\n    return;                 \
-    \              \\\n  } while(0)\n#define PR()        \\\n  do {              \\\
-    \n    cout << \"-1\\n\"; \\\n    return;         \\\n  } while(0)\n//#define PRECISION\n\
-    \nvoid solve() {\n}\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
+    \  return vector<decltype(makev(args...))>(sz, makev(args...));\n}\n\nnamespace\
+    \ in {\n  template<typename T>\n  bool print(const T &a) {\n    cout << a;\n \
+    \   return true;\n  }\n  template<typename T>\n  bool print(const vector<T> &vec)\
+    \ {\n    for(auto &a: vec) {\n      cout << a;\n      if(&a != &vec.back())\n\
+    \        cout << ' ';\n    }\n    return false;\n  }\n  template<typename T>\n\
+    \  bool print(const vector<vector<T>> &vv) {\n    for(auto &v: vv) {\n      for(auto\
+    \ &a: v) {\n        cout << a;\n        if(&a != &v.back())\n          cout <<\
+    \ ' ';\n      }\n      if(&v != &vv.back())\n        cout << '\\n';\n    }\n \
+    \   return false;\n  }\n}; // namespace in\nvoid print() { cout << '\\n'; }\n\
+    template<typename Head, typename... Tail>\nvoid print(Head &&head, Tail &&...tail)\
+    \ {\n  bool f = in::print(head);\n  if(sizeof...(tail) != 0) {\n    cout << (f\
+    \ ? ' ' : '\\n');\n  }\n  print(forward<Tail>(tail)...);\n}\n#pragma endregion\n\
+    \n//*\nconstexpr ll MOD = 1e9 + 7;\n/*/\nconstexpr ll MOD = 998244353;\n//*/\n\
+    \n#define PRF(f)                            \\\n  do {                       \
+    \             \\\n    cout << ((f) ? \"Yes\" : \"No\") << '\\n'; \\\n    return;\
+    \                               \\\n  } while(0)\n#define PR()        \\\n  do\
+    \ {              \\\n    cout << \"-1\\n\"; \\\n    return;         \\\n  } while(0)\n\
+    //#define PRECISION\n\nvoid solve() {}\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
     \  cout << fixed << setprecision(20);\n  //*\n  solve();\n  /*/\n  ll _cases;\n\
     \  cin >> _cases;\n  while (_cases--) solve();\n  //*/\n}"
   dependsOn: []
   isVerificationFile: false
   path: Cpp/Template/Template.cpp
   requiredBy: []
-  timestamp: '2022-06-11 18:10:59+09:00'
+  timestamp: '2022-06-13 19:17:04+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Cpp/Template/Template.cpp

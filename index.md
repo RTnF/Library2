@@ -1,11 +1,25 @@
 ---
 data:
   libraryCategories:
-  - name: Cpp/Math
+  - name: Cpp/Graph
     pages:
     - icon: ':heavy_check_mark:'
-      path: Cpp/Math/Prime.hpp
-      title: Cpp/Math/Prime.hpp
+      path: Cpp/Graph/BellmanFord.hpp
+      title: Cpp/Graph/BellmanFord.hpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/Dijkstra.hpp
+      title: Cpp/Graph/Dijkstra.hpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/GraphL.hpp
+      title: Cpp/Graph/GraphL.hpp
+  - name: Cpp/NumberTheory
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Cpp/NumberTheory/Factorize.hpp
+      title: Cpp/NumberTheory/Factorize.hpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/NumberTheory/IsPrime.hpp
+      title: Cpp/NumberTheory/IsPrime.hpp
   - name: Cpp/Template
     pages:
     - icon: ':warning:'
@@ -29,10 +43,27 @@ data:
     - icon: ':heavy_check_mark:'
       path: Cpp/Example/ManyAPlusB.test.cpp
       title: Cpp/Example/ManyAPlusB.test.cpp
-  - name: Cpp/Math
+  - name: Cpp/Graph
     pages:
     - icon: ':heavy_check_mark:'
-      path: Cpp/Math/IsPrime.test.cpp
-      title: Cpp/Math/IsPrime.test.cpp
+      path: Cpp/Graph/BellmanFord.test.cpp
+      title: Cpp/Graph/BellmanFord.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/Dijkstra.test.cpp
+      title: Cpp/Graph/Dijkstra.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/Dijkstra2.test.cpp
+      title: Cpp/Graph/Dijkstra2.test.cpp
+  - name: Cpp/NumberTheory
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Cpp/NumberTheory/Factorize.test.cpp
+      title: Cpp/NumberTheory/Factorize.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/NumberTheory/Factorize2.test.cpp
+      title: Cpp/NumberTheory/Factorize2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/NumberTheory/IsPrime.test.cpp
+      title: Cpp/NumberTheory/IsPrime.test.cpp
 layout: toppage
 ---

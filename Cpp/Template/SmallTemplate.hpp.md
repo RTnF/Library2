@@ -3,8 +3,20 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
-    path: Cpp/Math/Prime.hpp
-    title: Cpp/Math/Prime.hpp
+    path: Cpp/Graph/BellmanFord.hpp
+    title: Cpp/Graph/BellmanFord.hpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/Dijkstra.hpp
+    title: Cpp/Graph/Dijkstra.hpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/GraphL.hpp
+    title: Cpp/Graph/GraphL.hpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/NumberTheory/Factorize.hpp
+    title: Cpp/NumberTheory/Factorize.hpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/NumberTheory/IsPrime.hpp
+    title: Cpp/NumberTheory/IsPrime.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: Cpp/Example/APlusB.test.cpp
@@ -16,8 +28,23 @@ data:
     path: Cpp/Example/ManyAPlusB.test.cpp
     title: Cpp/Example/ManyAPlusB.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Cpp/Math/IsPrime.test.cpp
-    title: Cpp/Math/IsPrime.test.cpp
+    path: Cpp/Graph/BellmanFord.test.cpp
+    title: Cpp/Graph/BellmanFord.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/Dijkstra.test.cpp
+    title: Cpp/Graph/Dijkstra.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/Dijkstra2.test.cpp
+    title: Cpp/Graph/Dijkstra2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/NumberTheory/Factorize.test.cpp
+    title: Cpp/NumberTheory/Factorize.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/NumberTheory/Factorize2.test.cpp
+    title: Cpp/NumberTheory/Factorize2.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/NumberTheory/IsPrime.test.cpp
+    title: Cpp/NumberTheory/IsPrime.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -69,14 +96,23 @@ data:
   isVerificationFile: false
   path: Cpp/Template/SmallTemplate.hpp
   requiredBy:
-  - Cpp/Math/Prime.hpp
+  - Cpp/NumberTheory/IsPrime.hpp
+  - Cpp/NumberTheory/Factorize.hpp
+  - Cpp/Graph/GraphL.hpp
+  - Cpp/Graph/BellmanFord.hpp
+  - Cpp/Graph/Dijkstra.hpp
   timestamp: '2022-06-11 18:10:59+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/Example/ManyAPlusB.test.cpp
   - Cpp/Example/BBQEasy.test.cpp
   - Cpp/Example/APlusB.test.cpp
-  - Cpp/Math/IsPrime.test.cpp
+  - Cpp/NumberTheory/Factorize.test.cpp
+  - Cpp/NumberTheory/IsPrime.test.cpp
+  - Cpp/NumberTheory/Factorize2.test.cpp
+  - Cpp/Graph/Dijkstra2.test.cpp
+  - Cpp/Graph/Dijkstra.test.cpp
+  - Cpp/Graph/BellmanFord.test.cpp
 documentation_of: Cpp/Template/SmallTemplate.hpp
 layout: document
 redirect_from:
