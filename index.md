@@ -12,6 +12,12 @@ data:
     - icon: ':heavy_check_mark:'
       path: Cpp/Graph/GraphL.hpp
       title: Cpp/Graph/GraphL.hpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/GraphM.hpp
+      title: Cpp/Graph/GraphM.hpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/WarshallFloyd.hpp
+      title: Cpp/Graph/WarshallFloyd.hpp
   - name: Cpp/NumberTheory
     pages:
     - icon: ':heavy_check_mark:'
@@ -25,7 +31,7 @@ data:
     - icon: ':warning:'
       path: Cpp/Template/MMTemplate.cpp
       title: Cpp/Template/MMTemplate.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Cpp/Template/SmallTemplate.hpp
       title: Cpp/Template/SmallTemplate.hpp
     - icon: ':warning:'
@@ -37,7 +43,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Cpp/Example/APlusB.test.cpp
       title: Cpp/Example/APlusB.test.cpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: Cpp/Example/BBQEasy.test.cpp
       title: Cpp/Example/BBQEasy.test.cpp
     - icon: ':heavy_check_mark:'
@@ -54,6 +60,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Cpp/Graph/Dijkstra2.test.cpp
       title: Cpp/Graph/Dijkstra2.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Cpp/Graph/WarshallFloyd.test.cpp
+      title: Cpp/Graph/WarshallFloyd.test.cpp
   - name: Cpp/NumberTheory
     pages:
     - icon: ':heavy_check_mark:'

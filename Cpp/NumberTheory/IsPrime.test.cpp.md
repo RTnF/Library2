@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/IsPrime.hpp
     title: Cpp/NumberTheory/IsPrime.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []

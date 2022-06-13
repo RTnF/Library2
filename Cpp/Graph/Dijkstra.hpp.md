@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -50,7 +50,7 @@ data:
   isVerificationFile: false
   path: Cpp/Graph/Dijkstra.hpp
   requiredBy: []
-  timestamp: '2022-06-13 20:52:31+09:00'
+  timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/Graph/Dijkstra2.test.cpp

@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/IsPrime.hpp
     title: Cpp/NumberTheory/IsPrime.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -38,8 +38,8 @@ data:
     \ factor;\n    while(!(n & 1)) {\n      factor.emplace_back(2);\n      n >>= 1;\n\
     \    }\n    if(n <= 1) {\n      return factor;\n    }\n    if(isPrime(n)) {\n\
     \      factor.emplace_back(n);\n      return factor;\n    }\n    ull r = 0;\n\
-    \    for(int i = 1; !r && i <= 3; ++i) { r = rho(n, i); }\n    if(r) {\n     \
-    \ auto f1 = factorize(r);\n      auto f2 = factorize(n / r);\n      factor.insert(factor.end(),\
+    \    for(int i = 1; !r && i <= 3; ++i) {\n      r = rho(n, i);\n    }\n    if(r)\
+    \ {\n      auto f1 = factorize(r);\n      auto f2 = factorize(n / r);\n      factor.insert(factor.end(),\
     \ f1.begin(), f1.end());\n      factor.insert(factor.end(), f2.begin(), f2.end());\n\
     \      return factor;\n    } else {\n      // fallback O(sqrt(n))\n      for(ull\
     \ i = 3; i * i <= n; i += 2) {\n        while(n % i == 0) {\n          factor.emplace_back(i);\n\
@@ -53,7 +53,7 @@ data:
   isVerificationFile: false
   path: Cpp/NumberTheory/Factorize.hpp
   requiredBy: []
-  timestamp: '2022-06-13 19:17:04+09:00'
+  timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/NumberTheory/Factorize.test.cpp

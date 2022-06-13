@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -37,7 +37,7 @@ data:
     \ goal);\n  if(dist == GraphL<>::UNREACHABLE) {\n    cout << \"-1\\n\";\n  } else\
     \ {\n    auto ans = graph.getShortestPath(start, goal);\n    int n = (int)ans.size()\
     \ - 1;\n    cout << dist << ' ' << n << '\\n';\n    for(int i = 0; i < n; ++i)\
-    \ { cout << ans[i] << ' ' << ans[i + 1] << '\\n'; }\n  }\n}"
+    \ {\n      cout << ans[i] << ' ' << ans[i + 1] << '\\n';\n    }\n  }\n}"
   dependsOn:
   - Cpp/Graph/Dijkstra.hpp
   - Cpp/Template/SmallTemplate.hpp
@@ -45,7 +45,7 @@ data:
   isVerificationFile: true
   path: Cpp/Graph/Dijkstra2.test.cpp
   requiredBy: []
-  timestamp: '2022-06-13 20:52:31+09:00'
+  timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Cpp/Graph/Dijkstra2.test.cpp

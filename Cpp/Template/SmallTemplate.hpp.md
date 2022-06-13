@@ -12,6 +12,12 @@ data:
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
   - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/GraphM.hpp
+    title: Cpp/Graph/GraphM.hpp
+  - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/WarshallFloyd.hpp
+    title: Cpp/Graph/WarshallFloyd.hpp
+  - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/Factorize.hpp
     title: Cpp/NumberTheory/Factorize.hpp
   - icon: ':heavy_check_mark:'
@@ -21,7 +27,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Example/APlusB.test.cpp
     title: Cpp/Example/APlusB.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: Cpp/Example/BBQEasy.test.cpp
     title: Cpp/Example/BBQEasy.test.cpp
   - icon: ':heavy_check_mark:'
@@ -37,6 +43,9 @@ data:
     path: Cpp/Graph/Dijkstra2.test.cpp
     title: Cpp/Graph/Dijkstra2.test.cpp
   - icon: ':heavy_check_mark:'
+    path: Cpp/Graph/WarshallFloyd.test.cpp
+    title: Cpp/Graph/WarshallFloyd.test.cpp
+  - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/Factorize.test.cpp
     title: Cpp/NumberTheory/Factorize.test.cpp
   - icon: ':heavy_check_mark:'
@@ -45,9 +54,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/IsPrime.test.cpp
     title: Cpp/NumberTheory/IsPrime.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 2 "Cpp/Template/SmallTemplate.hpp"
@@ -100,9 +109,11 @@ data:
   - Cpp/NumberTheory/Factorize.hpp
   - Cpp/Graph/GraphL.hpp
   - Cpp/Graph/BellmanFord.hpp
+  - Cpp/Graph/WarshallFloyd.hpp
+  - Cpp/Graph/GraphM.hpp
   - Cpp/Graph/Dijkstra.hpp
   timestamp: '2022-06-11 18:10:59+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - Cpp/Example/ManyAPlusB.test.cpp
   - Cpp/Example/BBQEasy.test.cpp
@@ -111,6 +122,7 @@ data:
   - Cpp/NumberTheory/IsPrime.test.cpp
   - Cpp/NumberTheory/Factorize2.test.cpp
   - Cpp/Graph/Dijkstra2.test.cpp
+  - Cpp/Graph/WarshallFloyd.test.cpp
   - Cpp/Graph/Dijkstra.test.cpp
   - Cpp/Graph/BellmanFord.test.cpp
 documentation_of: Cpp/Template/SmallTemplate.hpp

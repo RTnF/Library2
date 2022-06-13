@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/NumberTheory/IsPrime.hpp
     title: Cpp/NumberTheory/IsPrime.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -32,8 +32,8 @@ data:
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/factorize\"\n#include \"\
     NumberTheory/Factorize.hpp\"\n\nint main() {\n  cin.tie(0);\n  ios::sync_with_stdio(false);\n\
     \  int q;\n  cin >> q;\n  while(q--) {\n    ull n;\n    cin >> n;\n    auto f\
-    \ = factorize(n);\n    cout << f.size();\n    for(auto p: f) { cout << ' ' <<\
-    \ p; }\n    cout << '\\n';\n  }\n}"
+    \ = factorize(n);\n    cout << f.size();\n    for(auto p: f) {\n      cout <<\
+    \ ' ' << p;\n    }\n    cout << '\\n';\n  }\n}"
   dependsOn:
   - Cpp/NumberTheory/Factorize.hpp
   - Cpp/Template/SmallTemplate.hpp
@@ -41,7 +41,7 @@ data:
   isVerificationFile: true
   path: Cpp/NumberTheory/Factorize2.test.cpp
   requiredBy: []
-  timestamp: '2022-06-13 19:17:04+09:00'
+  timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Cpp/NumberTheory/Factorize2.test.cpp

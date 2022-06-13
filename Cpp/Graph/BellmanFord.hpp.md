@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Cpp/Graph/GraphL.hpp
     title: Cpp/Graph/GraphL.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Cpp/Template/SmallTemplate.hpp
     title: Cpp/Template/SmallTemplate.hpp
   _extendedRequiredBy: []
@@ -35,13 +35,13 @@ data:
     \ Cost, class E>\nvoid GraphL<Cost, E>::bellmanFord(int start_node) {\n  if(shortest_path_dist.count(start_node))\
     \ {\n    return;\n  }\n  vector<Cost> dist(n, GraphL::UNREACHABLE);\n  vector<int>\
     \ parent(n, -1);\n  dist[start_node] = 0;\n  for(int i = 0; i < n - 1; ++i) {\n\
-    \    for(auto& es: adj){\n      for(auto& e: es){\n        if(dist[e.from] !=\
-    \ GraphL::UNREACHABLE && dist[e.from] + e.cost < dist[e.to]){\n          dist[e.to]\
+    \    for(auto &es: adj) {\n      for(auto &e: es) {\n        if(dist[e.from] !=\
+    \ GraphL::UNREACHABLE && dist[e.from] + e.cost < dist[e.to]) {\n          dist[e.to]\
     \ = dist[e.from] + e.cost;\n          parent[e.to] = e.from;\n        }\n    \
-    \  }\n    }\n  }\n  for(int i = 0; i < n; ++i) {\n    for(auto& es: adj){\n  \
-    \    for(auto& e: es){\n        if(dist[e.from] != GraphL::UNREACHABLE && dist[e.from]\
-    \ + e.cost < dist[e.to]){\n          dist[e.to] = GraphL::NEGATIVE_CYCLE;\n  \
-    \        parent[e.to] = -1;\n        }\n      }\n    }\n  }\n  shortest_path_dist[start_node]\
+    \  }\n    }\n  }\n  for(int i = 0; i < n; ++i) {\n    for(auto &es: adj) {\n \
+    \     for(auto &e: es) {\n        if(dist[e.from] != GraphL::UNREACHABLE && dist[e.from]\
+    \ + e.cost < dist[e.to]) {\n          dist[e.to] = GraphL::NEGATIVE_CYCLE;\n \
+    \         parent[e.to] = -1;\n        }\n      }\n    }\n  }\n  shortest_path_dist[start_node]\
     \ = move(dist);\n  shortest_path_parent[start_node] = move(parent);\n}"
   dependsOn:
   - Cpp/Template/SmallTemplate.hpp
@@ -49,7 +49,7 @@ data:
   isVerificationFile: false
   path: Cpp/Graph/BellmanFord.hpp
   requiredBy: []
-  timestamp: '2022-06-13 20:52:31+09:00'
+  timestamp: '2022-06-13 23:19:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Cpp/Graph/BellmanFord.test.cpp
