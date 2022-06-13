@@ -27,7 +27,9 @@ namespace in {
       return factor;
     }
     ull r = 0;
-    for(int i = 1; !r && i <= 3; ++i) { r = rho(n, i); }
+    for(int i = 1; !r && i <= 3; ++i) {
+      r = rho(n, i);
+    }
     if(r) {
       auto f1 = factorize(r);
       auto f2 = factorize(n / r);

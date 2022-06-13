@@ -20,6 +20,8 @@ int main() {
     auto ans = graph.getShortestPath(start, goal);
     int n = (int)ans.size() - 1;
     cout << dist << ' ' << n << '\n';
-    for(int i = 0; i < n; ++i) { cout << ans[i] << ' ' << ans[i + 1] << '\n'; }
+    for(int i = 0; i < n; ++i) {
+      cout << ans[i] << ' ' << ans[i + 1] << '\n';
+    }
   }
 }

@@ -16,8 +16,8 @@ template<class T>
 int Edge<T>::nextId = 0;
 
 template<class T>
-ostream &operator<<(ostream &os, Edge<T> edge) {
-  os << edge.from << " -> " << edge.to << " (" << edge.cost << ")";
+ostream &operator<<(ostream &os, const Edge<T> &edge) {
+  os << edge.id << ": " << edge.from << " -> " << edge.to << " (" << edge.cost << ")";
   return os;
 }
 
@@ -52,17 +52,24 @@ public:
   Cost getDist(int from, int to) { return shortest_path_dist[from][to]; }
   vector<int> getShortestPath(int from, int to) {
     vector<int> path;
-    for(int cur = to; cur != -1; cur = shortest_path_parent[from][cur]) { path.emplace_back(cur); }
+    for(int cur = to; cur != -1; cur = shortest_path_parent[from][cur]) {
+      path.emplace_back(cur);
+    }
     reverse(path.begin(), path.end());
     return path;
   }
+
+  template<class C_, class E_>
+  friend std::ostream &operator<<(std::ostream &, const GraphL<C_, E_> &);
 };
 
-template<class E = Edge<ll>>
-ostream &operator<<(ostream &os, GraphL<E> graph) {
+template<class C_, class E_>
+ostream &operator<<(ostream &os, const GraphL<C_, E_> &graph) {
   os << "N = " << graph.n << ", M = " << graph.m << '\n';
   for(const auto &ev: graph.adj) {
-    for(const auto &e: ev) { os << e << '\n'; }
+    for(const auto &e: ev) {
+      os << e << '\n';
+    }
   }
   return os;
 }
