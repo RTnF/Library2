@@ -19,7 +19,7 @@ public:
     }
   }
 
-  void add_edge(int from, int to, Cost cost = 1) {
+  void addEdge(int from, int to, Cost cost = 1) {
     mat[from][to] = cost;
     m++;
   }

@@ -35,14 +35,28 @@ public:
   GraphL() {}
   GraphL(int n_): n(n_), m(0), adj(n_) {}
 
-  template<class... Args>
-  void add_edge(int from, int to, Args... args) {
-    adj[from].emplace_back(from, to, args...);
-    m++;
-  }
-  void add_node() {
+  void addNode() {
     adj.emplace_back();
     n++;
+    resetShortest();
+  }
+  template<class... Args>
+  void addEdge(int from, int to, Args... args) {
+    adj[from].emplace_back(from, to, args...);
+    m++;
+    resetShortest();
+  }
+  // 双方向
+  template<class... Args>
+  void addBidirectionalEdge(int from, int to, Args... args) {
+    adj[from].emplace_back(from, to, args...);
+    adj[to].emplace_back(to, from, args...);
+    m += 2;
+    resetShortest();
+  }
+  void resetShortest() {
+    shortest_path_dist.clear();
+    shortest_path_parent.clear();
   }
   vector<E> &operator[](int i) { return adj[i]; }
 
@@ -58,6 +72,9 @@ public:
     reverse(path.begin(), path.end());
     return path;
   }
+
+  // 最小全域森
+  Cost prim();
 
   template<class C_, class E_>
   friend std::ostream &operator<<(std::ostream &, const GraphL<C_, E_> &);

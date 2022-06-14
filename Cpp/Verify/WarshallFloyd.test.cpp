@@ -11,7 +11,7 @@ int main() {
     int s, t;
     ll d;
     cin >> s >> t >> d;
-    g.add_edge(s, t, d);
+    g.addEdge(s, t, d);
   }
   g.warshallFloyd();
   if(g.hasNegativeCycle()) {

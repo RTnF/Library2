@@ -10,7 +10,7 @@ int main() {
   for(int i = 0; i < E; ++i) {
     int s, t, d;
     cin >> s >> t >> d;
-    graph.add_edge(s, t, d);
+    graph.addEdge(s, t, d);
   }
   graph.dijkstra(r);
   for(int i = 0; i < V; ++i) {
