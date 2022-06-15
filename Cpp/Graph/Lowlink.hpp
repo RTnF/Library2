@@ -6,7 +6,7 @@
  * Lowlink 関節点・橋の列挙
  * 関節点 削除すると連結成分数が増加する頂点
  * 橋 削除すると連結成分数が増加する辺
- * 返り値；関節点, 橋(from, to)
+ * 返り値：関節点, 橋(from, to)
  * O(V + E log E) (Lowlink + sort)
  * https://algo-logic.info/articulation-points/
  */

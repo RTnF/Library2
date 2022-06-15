@@ -80,6 +80,10 @@ public:
   // 関節点・橋
   pair<vector<int>, vector<pair<int, int>>> lowlink();
 
+  // トポロジカルソート
+  vector<int> topologicalSort();
+  vector<int> topologicalSortMinimum();
+
   template<class C_, class E_>
   friend std::ostream &operator<<(std::ostream &, const GraphL<C_, E_> &);
 };
