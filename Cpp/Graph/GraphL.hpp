@@ -10,6 +10,7 @@ public:
   const int from, to, id;
   const T cost;
   Edge(int from_, int to_, T cost_): from(from_), to(to_), id(nextId++), cost(cost_) {}
+  Edge(int from_, int to_): from(from_), to(to_), id(nextId++), cost(1) {}
 };
 
 template<class T>
@@ -75,6 +76,9 @@ public:
 
   // 最小全域森
   Cost prim();
+
+  // 関節点・橋
+  pair<vector<int>, vector<pair<int, int>>> lowlink();
 
   template<class C_, class E_>
   friend std::ostream &operator<<(std::ostream &, const GraphL<C_, E_> &);
