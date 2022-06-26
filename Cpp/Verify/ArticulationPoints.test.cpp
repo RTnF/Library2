@@ -13,7 +13,7 @@ int main() {
     graph.addBidirectionalEdge(s, t);
   }
   auto [aps, bridges] = graph.lowlink();
-  for(auto&& ap: aps){
+  for(auto &&ap: aps) {
     cout << ap << '\n';
   }
 }
