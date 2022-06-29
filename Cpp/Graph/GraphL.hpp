@@ -85,7 +85,7 @@ public:
   vector<int> topologicalSortMinimum();
 
   template<class C_, class E_>
-  friend std::ostream &operator<<(std::ostream &, const GraphL<C_, E_> &);
+  friend ostream &operator<<(ostream &, const GraphL<C_, E_> &);
 };
 
 template<class C_, class E_>

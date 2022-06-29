@@ -1,3 +1,4 @@
+#pragma once
 #include "Template/SmallTemplate.hpp"
 
 // based on ACL
