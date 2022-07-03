@@ -7,8 +7,8 @@ struct GroupSum {
   GroupSum(T x_): x(x_) {}
   GroupSum(): GroupSum(e()) {}
   static GroupSum e() { return 0; }
-  GroupSum inv() const { return e().x - x; }
   friend GroupSum op(const GroupSum &a, const GroupSum &b) { return a.x + b.x; }
+  GroupSum inv() const { return e().x - x; }
 };
 
 /**
@@ -21,6 +21,6 @@ struct GroupAffine {
   GroupAffine(T a_, T b_): a(a_), b(b_) {}
   GroupAffine(): GroupAffine(e()) {}
   static GroupAffine e() { return {1, 0}; }
-  GroupAffine inv() const { return {1 / a, -b / a}; }
   friend GroupAffine op(const GroupAffine &p, const GroupAffine &q) { return {p.a * q.a, p.b * q.a + q.b}; }
+  GroupAffine inv() const { return {1 / a, -b / a}; }
 };
