@@ -91,7 +91,7 @@ void print(Head &&head, Tail &&...tail) {
 struct Timer {
   chrono::high_resolution_clock::time_point start, now;
   chrono::nanoseconds nano;
-  int threshold = 1930000000; // 1.93 s
+  ll threshold = 1930000000; // 1.93 s
   Timer() { reset(); }
   void reset() { start = chrono::high_resolution_clock::now(); }
   int get_ns() {

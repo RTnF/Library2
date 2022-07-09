@@ -7,7 +7,7 @@ int main() {
   ios::sync_with_stdio(false);
   int n;
   cin >> n;
-  vector<Point> ps;
+  vector<Point<ll>> ps;
   ps.reserve(n);
   while(n--) {
     ll x, y;
