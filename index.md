@@ -13,6 +13,14 @@ data:
     - icon: ':warning:'
       path: Cpp/AlgebraicStructure/Monoid.hpp
       title: Cpp/AlgebraicStructure/Monoid.hpp
+  - name: Cpp/Array
+    pages:
+    - icon: ':warning:'
+      path: Cpp/Array/CumulativeSum.hpp
+      title: "1\u6B21\u5143\u7D2F\u7A4D\u548C"
+    - icon: ':x:'
+      path: Cpp/Array/SortUtil.hpp
+      title: "\u9006\u7F6E\u63DB"
   - name: Cpp/Geometry
     pages:
     - icon: ':heavy_check_mark:'
@@ -135,5 +143,10 @@ data:
     - icon: ':x:'
       path: Cpp/VerifyIgnored/TopologicalSort.test.cpp
       title: Cpp/VerifyIgnored/TopologicalSort.test.cpp
+  - name: Cpp/VerifyManually
+    pages:
+    - icon: ':x:'
+      path: Cpp/VerifyManually/compress.test.cpp
+      title: Cpp/VerifyManually/compress.test.cpp
 layout: toppage
 ---

@@ -39,7 +39,7 @@ data:
     \ {\n  bool f = in::print(head);\n  if(sizeof...(tail) != 0) {\n    cout << (f\
     \ ? ' ' : '\\n');\n  }\n  print(forward<Tail>(tail)...);\n}\n\nstruct Timer {\n\
     \  chrono::high_resolution_clock::time_point start, now;\n  chrono::nanoseconds\
-    \ nano;\n  int threshold = 1930000000; // 1.93 s\n  Timer() { reset(); }\n  void\
+    \ nano;\n  ll threshold = 1930000000; // 1.93 s\n  Timer() { reset(); }\n  void\
     \ reset() { start = chrono::high_resolution_clock::now(); }\n  int get_ns() {\n\
     \    now = chrono::high_resolution_clock::now();\n    nano = chrono::duration_cast<chrono::nanoseconds>(now\
     \ - start);\n    return nano.count();\n  }\n  int get_us() { return get_ns() /\
@@ -88,7 +88,7 @@ data:
     \ {\n  bool f = in::print(head);\n  if(sizeof...(tail) != 0) {\n    cout << (f\
     \ ? ' ' : '\\n');\n  }\n  print(forward<Tail>(tail)...);\n}\n\nstruct Timer {\n\
     \  chrono::high_resolution_clock::time_point start, now;\n  chrono::nanoseconds\
-    \ nano;\n  int threshold = 1930000000; // 1.93 s\n  Timer() { reset(); }\n  void\
+    \ nano;\n  ll threshold = 1930000000; // 1.93 s\n  Timer() { reset(); }\n  void\
     \ reset() { start = chrono::high_resolution_clock::now(); }\n  int get_ns() {\n\
     \    now = chrono::high_resolution_clock::now();\n    nano = chrono::duration_cast<chrono::nanoseconds>(now\
     \ - start);\n    return nano.count();\n  }\n  int get_us() { return get_ns() /\
@@ -112,7 +112,7 @@ data:
   isVerificationFile: false
   path: Cpp/Template/MMTemplate.cpp
   requiredBy: []
-  timestamp: '2022-06-13 19:17:04+09:00'
+  timestamp: '2022-07-09 21:37:27+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Cpp/Template/MMTemplate.cpp

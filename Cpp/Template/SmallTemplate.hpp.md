@@ -12,6 +12,12 @@ data:
   - icon: ':warning:'
     path: Cpp/AlgebraicStructure/Monoid.hpp
     title: Cpp/AlgebraicStructure/Monoid.hpp
+  - icon: ':warning:'
+    path: Cpp/Array/CumulativeSum.hpp
+    title: "1\u6B21\u5143\u7D2F\u7A4D\u548C"
+  - icon: ':x:'
+    path: Cpp/Array/SortUtil.hpp
+    title: "\u9006\u7F6E\u63DB"
   - icon: ':heavy_check_mark:'
     path: Cpp/Geometry/Point.hpp
     title: Cpp/Geometry/Point.hpp
@@ -109,6 +115,9 @@ data:
   - icon: ':x:'
     path: Cpp/VerifyIgnored/TopologicalSort.test.cpp
     title: Cpp/VerifyIgnored/TopologicalSort.test.cpp
+  - icon: ':x:'
+    path: Cpp/VerifyManually/compress.test.cpp
+    title: Cpp/VerifyManually/compress.test.cpp
   _isVerificationFailed: true
   _pathExtension: hpp
   _verificationStatusIcon: ':question:'
@@ -173,10 +182,13 @@ data:
   - Cpp/Graph/GraphM.hpp
   - Cpp/Graph/Prim.hpp
   - Cpp/Graph/GraphL.hpp
+  - Cpp/Array/CumulativeSum.hpp
+  - Cpp/Array/SortUtil.hpp
   timestamp: '2022-06-30 00:19:58+09:00'
   verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - Cpp/VerifyIgnored/TopologicalSort.test.cpp
+  - Cpp/VerifyManually/compress.test.cpp
   - Cpp/Verify/PointAddRangeSum.test.cpp
   - Cpp/Verify/APlusB.test.cpp
   - Cpp/Verify/Bridges.test.cpp
